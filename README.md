@@ -1,4 +1,4 @@
-# 🛍️ Product Manager
+# Product Manager
 
 A modern **Next.js 16** application that demonstrates a persistent product management system using **Zustand**, **shadcn/ui**, and **Tailwind CSS v4**.
 
@@ -12,7 +12,7 @@ Users can:
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 | Tool                       | Purpose                  |
 | -------------------------- | ------------------------ |
@@ -27,7 +27,7 @@ Users can:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 app/
@@ -49,62 +49,19 @@ store/
 lib/
   utils.ts           # cn() helper
 ```
+##  Features
+
+*  Add new products
+*  Edit product details (name, category, price, quantity)
+*  Delete products
+*  Persistent state using localStorage
+*  No backend required
+*  Hydration-safe (no UI mismatch issues)
+*  Clean UI with shadcn components
 
 ---
 
-## ⚙️ Installation
-
-```bash
-# Clone the repository
-git clone <your-repo-url>
-
-# Navigate into project
-cd product-manager
-
-# Install dependencies
-pnpm install
-```
-
----
-
-## ▶️ Running the App
-
-```bash
-pnpm dev
-```
-
-Open:
-
-```
-http://localhost:3000
-```
-
----
-
-## ✨ Features
-
-* ✅ Add new products
-* ✅ Edit product details (name, category, price, quantity)
-* ✅ Delete products
-* ✅ Persistent state using localStorage
-* ✅ No backend required
-* ✅ Hydration-safe (no UI mismatch issues)
-* ✅ Clean UI with shadcn components
-
----
-
-## 🧠 How Persistence Works
-
-* Zustand `persist` middleware stores data in **localStorage**
-* On reload:
-
-  * Data is rehydrated into the store
-  * UI waits using a `hydrated` flag
-* Prevents React hydration mismatch issues
-
----
-
-## 🔄 Store Actions
+## Store Actions
 
 * `addProduct()` → Adds new product
 * `deleteProduct(id)` → Removes product
@@ -112,7 +69,7 @@ http://localhost:3000
 
 ---
 
-## ⚠️ Important Concepts
+##  Important Concepts
 
 ### Hydration
 
@@ -130,31 +87,14 @@ A `hydrated` flag ensures UI renders only after data is loaded.
 
 ---
 
-## 📦 Example Product Object
+## Future Improvements
 
-```ts
-{
-  id: 1,
-  name: "Wireless Headphones",
-  price: 79.99,
-  category: "Electronics",
-  quantity: 10
-}
-```
+*  Authentication (Admin / User roles)
+*  Backend integration (MySQL / API routes)
+*  Dashboard analytics
+*  Search & filtering
+*  Categories management
+*  Inventory tracking
 
 ---
 
-## 🛠️ Future Improvements
-
-* 🔐 Authentication (Admin / User roles)
-* 🌐 Backend integration (MySQL / API routes)
-* 📊 Dashboard analytics
-* 🔍 Search & filtering
-* 📁 Categories management
-* 📈 Inventory tracking
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
